@@ -11,7 +11,7 @@ class Home extends Component {
                     <MDBCol>
                         <ul className="home-list">
                             <li><MDBCardImage className="home-img" src="http://placekitten.com/300/300"/></li>
-                            <li><a className="edit-link" color="primary" href="/NameAddress">Edit</a></li>
+                            <li className="button-li"><a className="next-button" color="primary" href="/NameAddress">Edit</a></li>
                         </ul>
                     </MDBCol>
                 </MDBRow>
