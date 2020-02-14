@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {MDBContainer, MDBRow, MDBCol, MDBCardImage, MDBInput, MDBBtn} from 'mdbreact';
+import './style.css';
 
 
 class NameAddress extends Component {
@@ -8,9 +9,11 @@ class NameAddress extends Component {
             <MDBContainer>
                 <MDBRow>
                     <MDBCol>
-                        <MDBInput type="text" className="home-form" placeholder="Name"/>
-                        <MDBInput type="text" className="home-form" placeholder="Address"/>
-                        <a type="button" href="/PhoneEmail">Next Page</a>
+                        <ul className="sub-list">
+                            <li><input type="text" className="home-form" placeholder="Name"/></li>
+                            <li><input type="text" className="home-form" placeholder="Address"/></li>
+                            <li className="button-li"><a type="button" className="next-button" href="/PhoneEmail">Next Page</a></li>
+                        </ul>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {MDBContainer, MDBRow, MDBCol, MDBCardImage, MDBInput, MDBBtn} from 'mdbreact';
+import './style.css';
 
 class Home extends Component {
     render(){
@@ -8,8 +9,10 @@ class Home extends Component {
             <MDBContainer>
                 <MDBRow>
                     <MDBCol>
-                        <MDBCardImage src="http://placekitten.com/200/300"/>
-                        <a color="primary" href="/NameAddress">Edit</a>
+                        <ul className="home-list">
+                            <li><MDBCardImage className="home-img" src="http://placekitten.com/300/300"/></li>
+                            <li><a className="edit-link" color="primary" href="/NameAddress">Edit</a></li>
+                        </ul>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
